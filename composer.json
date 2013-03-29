@@ -1,6 +1,6 @@
 {
     "name": "remithomas/rt-gravatar",
-    "description": "ZF2 helper extends Zend\View\Helper\Gravatar",
+    "description": "ZF2 helper extends Zend/View/Helper/Gravatar",
     "type": "library",
     "keywords": [
         "zf2","gravatar","helper"
