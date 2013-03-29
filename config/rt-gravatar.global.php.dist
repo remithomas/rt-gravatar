@@ -1,0 +1,11 @@
+<?php
+namespace RtGravatar;
+return array(
+    'view_helpers' => array(
+        'invokables' => array(
+            'RtGravatar' => 'RtGravatar\View\Helper\RtGravatar',
+            'RtHasGravatar' => 'RtGravatar\View\Helper\RtHasGravatar',
+        )
+    ),
+);
+?>
