@@ -2,8 +2,6 @@
 
 namespace RtGravatar;
 
-use Zend\Authentication\AuthenticationService;
-
 return array(
     'controller_plugins' => array(
         'invokables' => array(
@@ -12,15 +10,14 @@ return array(
             'Gravatar'      => 'Zend\View\Helper\Gravatar'
         )
     ),
-    
-        'service_manager' => array(
-            'invokables' => array(
-               'Zend\Authentication\AuthenticationService' => 'Zend\Authentication\AuthenticationService',
+    'translator' => array(
+        'translation_file_patterns' => array(
+            array(
+                'type'     => 'phparray',
+                'base_dir' => __DIR__ . '/../language',
+                'pattern'  => '%s.php',
+                //'text_domain' => __NAMESPACE__,
             ),
         ),
-        'services' => array(
-            // Keys are the service names
-            // Values are objects
-            'Auth' => new AuthenticationService(),
-        ),
+  ),
 );
