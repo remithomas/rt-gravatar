@@ -1,0 +1,29 @@
+{
+    "name": "remithomas/rt-gravatar",
+    "description": "ZF2 helper extends Zend\View\Helper\Gravatar",
+    "type": "library",
+    "keywords": [
+        "zf2","gravatar","helper"
+    ],
+    "homepage": "https://github.com/remithomas/rt-gravatar",
+    "authors": [
+        {
+            "name": "Remi THOMAS",
+            "email": "remi.thomas@yahoo.fr",
+            "homepage": "http://remithomas.fr/"
+        }
+    ],
+    "version": "0.1",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-view": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "RtGravatar": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
