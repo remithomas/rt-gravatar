@@ -3,6 +3,14 @@ rt-gravatar
 
 ZF2 helper extends Zend\View\Helper\Gravatar
 
+Features / Goals
+============
+
+* Get the gravatar from an email address
+* Get Gravatar from the current logged user
+* Available edition link for the current logged user
+* Indicate if the current logged user or the email address has a Gravatar
+
 How to install ?
 ============
 ### Using composer.json
