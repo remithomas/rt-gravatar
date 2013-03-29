@@ -7,7 +7,7 @@ How to install ?
 ============
 ### Using composer.json
 
-```
+```json
 {
     "name": "zendframework/skeleton-application",
     "description": "Skeleton Application for ZF2",
@@ -29,7 +29,7 @@ How to install ?
 ### Activate the module :
 
 application.config.php
-```
+```php
 <?php
 return array(
     'modules' => array(
@@ -42,7 +42,7 @@ return array(
 
 ### Only activated in one module
 If you need to use this plugin **only in one module**. Just copy this code and add it into your own module config (module.config.php)
-```
+```php
 <?php
 return array(
     ...
@@ -61,7 +61,7 @@ How to use ?
 ============
 
 ### Standart use
-```
+```php
 <?php 
 $options = array("img_size"=>150);
 $attribs = array();
@@ -70,14 +70,14 @@ echo $this->RtGravatar("me@example.com",$options,$attribs,true);
 ```
 
 ### User has a gravatar ?
-```
+```php
 <?php 
 var_dump ($this->RtHasGravatar("me@example.com"); 
 ?>
 ```
 
 ### User (connected or me) has a gravatar ?
-```
+```php
 <?php 
 var_dump ($this->RtHasGravatar("me"); 
 // or
@@ -86,7 +86,7 @@ var_dump ($this->RtHasGravatar();
 ```
 
 ### User can go to the edition
-```
+```php
 <?php 
 $options = array("img_size"=>150);
 $attribs = array();
