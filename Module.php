@@ -11,10 +11,7 @@ class Module
      * @param MvcEvent $e
      */
     public function onBootstrap(Event $e){
-        $translator = $e->getApplication()->getServiceManager()->get('translator');
-        $translator
-          ->setLocale(\Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']))
-          ->setFallbackLocale('en_US');
+        
     }
     
     public function getControllerConfig()
