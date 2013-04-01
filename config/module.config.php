@@ -3,7 +3,7 @@
 namespace RtGravatar;
 
 return array(
-    'controller_plugins' => array(
+    'view_helpers' => array(
         'invokables' => array(
             'RtGravatar'    => 'RtGravatar\View\Helper\RtGravatar',
             'RtHasGravatar' => 'RtGravatar\View\Helper\RtHasGravatar',

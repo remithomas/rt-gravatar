@@ -1,4 +1,4 @@
 <?php
 namespace RtGravatar;
-return array("change me"=>"change moi");
+return array("change me"=>"change-moi");
 ?>
