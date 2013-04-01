@@ -10,6 +10,7 @@ Features / Goals
 * Get Gravatar from the current logged user
 * Available edition link for the current logged user
 * Indicate if the current logged user or the email address has a Gravatar
+* Multilinguage EN / FR / ES / IT / RO
 
 How to install ?
 ============
