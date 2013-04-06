@@ -23,9 +23,13 @@ class RtHasGravatar extends AbstractHelper
     public function __invoke($email = "me")
     {
         if($email == "me"){
-            $email = $this->view->ZfcUserIdentity()->getEmail();
-            if(is_null($email) || $email == ""){
+            if($this->view->ZfcUserIdentity() == false){
                 return false;
+            }else{
+                $email = $this->view->ZfcUserIdentity()->getEmail();
+                if(is_null($email) || $email == ""){
+                    return false;
+                }
             }
         }
         
@@ -33,7 +37,7 @@ class RtHasGravatar extends AbstractHelper
     }
     
     /**
-     * 
+     * Validate if has gravatar
      * @param string $email
      * @return boolean 
      */
